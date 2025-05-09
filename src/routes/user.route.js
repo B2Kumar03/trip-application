@@ -17,8 +17,8 @@ const transporter = nodemailer.createTransport({
   port: Number(465), // 465 or 587
   secure: 465 == 465, // true for 465, false for 587
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: "bk7355583@gmail.com",
+    pass: "wpme eaxb wcge gvxt",
   },
 });
   
@@ -30,7 +30,7 @@ const transporter = nodemailer.createTransport({
     }
   
     const mailOptions = {
-      from: process.env.USER_EMAIL,
+      from: "bk7355583@gmail.com",
       to: email,
       subject: "🌍 You're Invited to Join a Trip!",
       html: `
