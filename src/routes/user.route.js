@@ -13,9 +13,9 @@ userRouter.get("/get-user",getUser)
 
 
 const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_HOST, // e.g., smtp.gmail.com
-  port: Number(process.env.EMAIL_PORT), // 465 or 587
-  secure: process.env.EMAIL_PORT == 465, // true for 465, false for 587
+  host: smtp.gmail.com, // e.g., smtp.gmail.com
+  port: Number(465), // 465 or 587
+  secure: 465 == 465, // true for 465, false for 587
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
