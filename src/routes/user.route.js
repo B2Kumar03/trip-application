@@ -13,7 +13,7 @@ userRouter.get("/get-user",getUser)
 
 
 const transporter = nodemailer.createTransport({
-  host: smtp.gmail.com, // e.g., smtp.gmail.com
+  host: "smtp.gmail.com", // e.g., smtp.gmail.com
   port: Number(465), // 465 or 587
   secure: 465 == 465, // true for 465, false for 587
   auth: {
